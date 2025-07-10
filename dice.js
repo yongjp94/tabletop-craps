@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const dice = document.querySelectorAll(".die");
+    const rollTimeMs = 2000;
 
     window.rollDice = function() {
         dice.forEach((die) => {
@@ -20,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Update the game state
             updateGame(die1Value + die2Value);
 
-        }, 1000);
+        }, rollTimeMs);
     }
 
     function getDiceHTML(value) {

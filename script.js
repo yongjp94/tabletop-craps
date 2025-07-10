@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 endGame();
             } else {
                 losingNumber = roll;
-                losingNumberDisplay.textContent = `Losing number is ${losingNumber}`;
+                losingNumberDisplay.textContent = `Don't roll a ${losingNumber} or 7!`;
                 firstRoll = false;
             }
         } else {
