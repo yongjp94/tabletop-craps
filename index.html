@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabletop Craps</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <h1 class="title">Tabletop Craps</h1>
+        <div id="dice-container" class="dice-container">
+            <div id="die-1" class="die"></div>
+            <div id="die-2" class="die"></div>
+        </div>
+        <div id="status-container">
+            <p id="status">Roll the dice to start!</p>
+            <p id="losing-number"></p>
+        </div>
+        <button id="roll-button" class="btn">Roll Dice</button>
+        <button id="new-game-button" class="btn" style="display: none;">New Game</button>
+        <button id="how-to-play-button" class="btn">How to Play</button>
+    </div>
+
+    <div id="how-to-play-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>How to Play Tabletop Craps</h2>
+            <p>This is a simplified version of Craps, perfect for a quick game!</p>
+            <h3>Rules</h3>
+            <ol>
+                <li>Roll two dice.</li>
+                <li>**First Roll:**
+                    <ul>
+                        <li>If you roll a 7, you win!</li>
+                        <li>Any other number becomes the 'losing number'.</li>
+                    </ul>
+                </li>
+                <li>**Subsequent Rolls:**
+                    <ul>
+                        <li>If you roll the 'losing number', you lose.</li>
+                        <li>If you roll a 7, you lose.</li>
+                        <li>Any other number, pass the dice to the next player.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <script src="dice.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
